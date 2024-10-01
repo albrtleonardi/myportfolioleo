@@ -70,13 +70,11 @@ const AnimatedRoutes = ({ isDarkMode, isMonochrome }) => {
               exit="exit"
               transition={pageTransition.transition}
             >
-              {/* Projects Component Rendered for "/" Route */}
               <Projects isDarkMode={isDarkMode} isMonochrome={isMonochrome} />
               <Footer isDarkMode={isDarkMode} />
             </motion.div>
           }
         />
-        {/* Error page route where only ErrorPage is shown */}
         <Route
           path="*"
           element={
@@ -115,7 +113,6 @@ const App = () => {
           isMonochrome={isMonochrome}
           setIsMonochrome={setIsMonochrome}
         />
-        ={" "}
         <motion.div
           initial={{ backgroundColor: isDarkMode ? "#000" : "#fff" }}
           animate={{ backgroundColor: isDarkMode ? "#000" : "#fff" }}
