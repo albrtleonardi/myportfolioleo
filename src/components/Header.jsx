@@ -7,17 +7,13 @@ const Header = ({ isDarkMode }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      // Check if screen width is below 768px (mobile)
       setIsSmallScreen(window.innerWidth <= 768);
     };
 
-    // Initial check
     handleResize();
 
-    // Add event listener for resize
     window.addEventListener("resize", handleResize);
 
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
