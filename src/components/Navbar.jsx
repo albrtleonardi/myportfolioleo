@@ -27,9 +27,9 @@ const Navbar = ({
   };
 
   return (
-    <div className="w-[97%] mx-auto flex justify-between items-center mt-4 font-poppins font-light text-xs transition-colors duration-200">
+    <div className="w-[97%] mx-auto flex justify-between items-center mt-4 font-poppins font-light text-xs transition-colors duration-200 space-x-8">
       <div
-        className={`transition-colors duration-200 ${
+        className={`transition-colors duration-200 text-left hidden lg:block ${
           isDarkMode ? "text-gray-200" : "text-gray-400"
         }`}
       >
@@ -47,7 +47,9 @@ const Navbar = ({
               : isDarkMode
               ? "text-gray-400"
               : "text-gray-400"
-          } ${isDarkMode ? "hover:text-gray-200" : "hover:text-gray-900"}`}
+          } ${
+            isDarkMode ? "hover:text-gray-200" : "hover:text-gray-900"
+          } text-center lg:text-left`}
         >
           Information
         </Link>
@@ -61,16 +63,18 @@ const Navbar = ({
               : isDarkMode
               ? "text-gray-400"
               : "text-gray-400"
-          } ${isDarkMode ? "hover:text-gray-200" : "hover:text-gray-900"}`}
+          } ${
+            isDarkMode ? "hover:text-gray-200" : "hover:text-gray-900"
+          } text-center lg:text-left`}
         >
           Projects
         </Link>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <span
           onClick={() => setIsDarkMode(!isDarkMode)}
-          className={`cursor-pointer transition-colors duration-200 flex justify-between w-[150px] ${
+          className={`cursor-pointer transition-colors duration-200 flex items-center justify-between w-[150px] text-center lg:text-left ${
             isDarkMode
               ? "text-gray-200 hover:text-gray-300"
               : "text-gray-400 hover:text-black"
@@ -82,7 +86,7 @@ const Navbar = ({
 
         <span
           onClick={() => setIsMonochrome(!isMonochrome)}
-          className={`cursor-pointer transition-colors duration-200 flex justify-between w-[150px] ${
+          className={`cursor-pointer transition-colors duration-200 flex items-center justify-between w-[150px] text-center lg:text-left ${
             isDarkMode
               ? "text-gray-200 hover:text-gray-300"
               : "text-gray-400 hover:text-black"
@@ -94,7 +98,7 @@ const Navbar = ({
       </div>
 
       <div
-        className={`transition-colors duration-200 text-right ${
+        className={`transition-colors duration-200 text-center lg:text-right ${
           isDarkMode ? "text-gray-200" : "text-gray-400"
         }`}
       >
