@@ -12,6 +12,7 @@ export const myProjects = [
     role: "Frontend Developer",
     services: ["React", "TailwindCSS", "Axios"],
     url: "https://worlduniversity.vercel.app",
+    gitHub: "https://github.com/albrtleonardi/worlduniversity",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const myProjects = [
     role: "Backend Developer",
     services: ["React + Vite", "Express", "Python", "MySQL"],
     url: "-",
+    gitHub: "-",
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export const myProjects = [
     role: "Backend Developer",
     services: ["Hashgraph", "React + Vite", "Express", "MySQL"],
     url: "-",
+    gitHub: "-",
   },
   {
     id: 4,
@@ -43,5 +46,6 @@ export const myProjects = [
     role: "-",
     services: ["-"],
     url: "-",
+    gitHub: "-",
   },
 ];
