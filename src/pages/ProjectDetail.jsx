@@ -102,7 +102,9 @@ const ProjectDetail = ({ isMonochrome, isDarkMode }) => {
             <p className="font-medium">URL</p>
             <a
               href={url}
-              className="text-black hover:underline break-words max-w-[60%] lg:max-w-none"
+              className={`hover:underline break-words max-w-[60%] lg:max-w-none ${
+                isDarkMode ? "text-gray-300" : "text-black"
+              }`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -118,7 +120,9 @@ const ProjectDetail = ({ isMonochrome, isDarkMode }) => {
             <p className="font-medium">GitHub</p>
             <a
               href={gitHub}
-              className="text-black hover:underline break-words max-w-[60%] lg:max-w-none"
+              className={`hover:underline break-words max-w-[60%] lg:max-w-none ${
+                isDarkMode ? "text-gray-300" : "text-black"
+              }`}
               target="_blank"
               rel="noopener noreferrer"
             >
